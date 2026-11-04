@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="alaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e40af" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- iOS App Icon Squircle Background -->
+  <rect width="512" height="512" rx="115" fill="url(#alaGrad)" />
+  
+  <!-- Subtle Highlight Curve -->
+  <path d="M 0 115 C 0 51.5 51.5 0 115 0 L 397 0 C 460.5 0 512 51.5 512 115 L 512 200 C 350 220 180 160 0 280 Z" fill="white" opacity="0.08" />
+
+  <!-- Modern Alashop Stylized Shopping Bag & Letter A Monogram -->
+  <g filter="url(#shadow)" transform="translate(96, 88)">
+    <!-- Bag Handle -->
+    <path d="M 100 130 C 100 70, 220 70, 220 130" fill="none" stroke="white" stroke-width="26" stroke-linecap="round" />
+    <!-- Bag Body -->
+    <path d="M 40 130 L 280 130 L 260 310 C 258 322, 248 332, 236 332 L 84 332 C 72 332, 62 322, 60 310 Z" fill="white" />
+    
+    <!-- Stylized "A" and Marketplace Smile inside bag -->
+    <!-- Left leg of A -->
+    <path d="M 160 175 L 115 275 L 140 275 L 152 248 L 168 248 L 180 275 L 205 275 Z" fill="#1d4ed8" />
+    <!-- Inner crossbar & triangle of A -->
+    <polygon points="160,205 155,228 165,228" fill="white" />
+    
+    <!-- Dynamic Accent Swoosh (Kaspi/Amazon energetic curve) -->
+    <path d="M 105 292 Q 160 316 215 292" fill="none" stroke="#0284c7" stroke-width="9" stroke-linecap="round" />
+    <!-- Small star sparkle -->
+    <path d="M 230 180 Q 235 190 245 195 Q 235 200 230 210 Q 225 200 215 195 Q 225 190 230 180 Z" fill="#38bdf8" />
+  </g>
+</svg>
